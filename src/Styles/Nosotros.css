@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center ;
     align-items: center;
-    height: 90vh;
+    height: 79vh;
     overflow: hidden;
 }
 .perfil__info-container{
@@ -57,6 +57,10 @@
 
 
 @media (min-width:760px) {
+    .article-nosotros{
+        height: 81vh;
+        
+    }
     .profile__info{
         padding: 0 14rem;
     }

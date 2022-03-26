@@ -89,9 +89,9 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="header-nav__link-item">
-                <NavLink to="/contacto" className="header-nav__link">
+                <a href="https://api.whatsapp.com/send?phone=51970486444" className="header-nav__link" target="_blank" rel="noreferrer">
                   Contacto
-                </NavLink>
+                </a>
               </li>
               <li
                 className="header-nav__link-item header-nav__link-item--close-icon-container"

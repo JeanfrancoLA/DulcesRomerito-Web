@@ -1,0 +1,35 @@
+.footer {
+    text-align: center;
+    background-color: #53173c6e;
+    color: white;
+    padding: .5rem 0;
+}
+
+
+
+@media (min-width:760px) {
+
+    .footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-color: #53173c6e;
+        color: white;
+        padding: 1rem 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-credits {
+        margin: 0;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+}

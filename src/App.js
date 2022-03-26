@@ -9,7 +9,12 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import Footer from "./Components/Footer";
 
+const credits = {
+  company: 'Dulces Detalles "ROMERITO"',
+  currentYear: new Date().getFullYear()
+};
 
 function App() {
   return (
@@ -23,6 +28,9 @@ function App() {
     <Route path="/" element={<div></div>} />
   </Routes>
 
+  <Footer
+    credits={credits}
+  />
 </Router>
   );
 }
