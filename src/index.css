@@ -1,0 +1,26 @@
+:root {
+    scroll-behavior: smooth;
+    --primary-theme-color: #ebced3;
+    --secondary-theme-color: #e2d7d1;
+    --text-color: #d662c7;
+    --shadow-color: #21242c80;
+    --button-color: #dfa576;
+    --button-color-active: #fff;
+    --button-text-color: #000;
+    --button-text-color-active: #000;
+    --padding-section: 2rem 0;
+    --padding-container: 0 2rem;
+    --primary-highlight: #7c0668;
+    --secondary-highlight: #bd081c;
+    --border-radius: 0.5rem;
+    --all-transitions: all 0.25s;
+  }
+  
+  .body {
+    background-color: var(--secondary-theme-color);
+    /* background-image: url("https://i.postimg.cc/TP72DrSd/pancitos.png"); */
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    transition: var(--all-transitions);
+  }

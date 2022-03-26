@@ -1,0 +1,61 @@
+.main {
+    background-image: linear-gradient(120deg, rgba(219, 85, 186, 0.699) 0%, rgba(95, 39, 46, 0.692) 100%), url("../assets/img/presentacion.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    z-index: 1500;
+}
+
+.info-entrada-container{
+    display:  flex;
+    flex-direction: column;
+    height: 100%;
+    gap: .75rem;
+    justify-content: center;
+    align-items: center;
+}
+.info-entrada__title{
+    margin: 0;
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.info-entrada__subtitle{
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.info-entrada__paragraph{
+    margin: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+.button1 {
+    padding: .75rem 2rem;
+    background-color: #e71287;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .75s;
+  }
+
+  .button1:hover {
+    background-color: #fff;
+    color: rgb(219, 6, 138);
+  }

@@ -1,34 +1,29 @@
 import "./App.css";
+import Header from "./Components/Header";
+import Inicio from "./Pages/Inicio";
+import Nosotros from "./Pages/Nosotros";
+import StartPage from "./Pages/StartPage";
+
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  NavLink
+  Route
 } from 'react-router-dom';
 
 
 function App() {
   return (
     <Router>
-        <NavLink to="/inicio">
-          Inicio
-        </NavLink>
-        <br/>
-        <NavLink to="/nosotros">
-          Nosotros
-        </NavLink>
-        <br/>
-        <NavLink to="/startpage">
-          StartPage
-        </NavLink>
-        <Routes>
-          <Route path="/sobre-nosotros" element={<div>Nosotros</div>} />
-          <Route path="/inicio" element={<div>inicio</div>} />
-          <Route path="/startpage" element={<div>startpage</div>} />
-          <Route path="/" element={<div></div>} />
-        </Routes>
       
-    </Router>
+    <Header/>
+  <Routes>
+    <Route path="/sobre-nosotros" element={<Nosotros/>} />
+    <Route path="/inicio" element={<Inicio/>} />
+    <Route path="/startpage" element={<StartPage/>} />
+    <Route path="/" element={<div></div>} />
+  </Routes>
+
+</Router>
   );
 }
 
