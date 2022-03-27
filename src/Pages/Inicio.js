@@ -1,5 +1,5 @@
 import logo from "../assets/img/logo.png";
-import ApiRest from "../Hooks/ApiRest";
+import Galeria from "../Cards/Galeria";
 import "../Styles/Inicio.css";
 
 const Inicio = () => {
@@ -14,10 +14,8 @@ const Inicio = () => {
         </div>
       </section>
       <section>
-        <h2>title ver Api</h2>
-          <h3>Aqui tiene que ir la Api</h3>
+        <Galeria/>
       </section>
-      {/* <ApiRest/> */}
     </>
   );
 };
