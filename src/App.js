@@ -9,12 +9,10 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Footer from "./Components/Footer";
 
-const credits = {
-  company: 'Dulces Detalles "ROMERITO"',
-  currentYear: new Date().getFullYear()
-};
+import NuestrosPaquetes from "./Pages/NuestrosPaquetes";
+
+
 
 function App() {
   return (
@@ -22,15 +20,13 @@ function App() {
       
     <Header/>
   <Routes>
+    <Route path="/nuestros-paquetes" element={<NuestrosPaquetes/>} />
     <Route path="/sobre-nosotros" element={<Nosotros/>} />
     <Route path="/inicio" element={<Inicio/>} />
     <Route path="/startpage" element={<StartPage/>} />
-    <Route path="/" element={<div></div>} />
+    <Route path="/" element={<StartPage/>} />
   </Routes>
 
-  <Footer
-    credits={credits}
-  />
 </Router>
   );
 }

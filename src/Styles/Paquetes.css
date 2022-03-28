@@ -1,0 +1,138 @@
+
+.paquete-despliegue {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.paquete-list-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.products-precio{
+    padding: .75rem 0;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    margin: 0;
+}
+
+.paquete-container {
+    /* padding: 1rem 0; */
+    min-height: 86.5vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paquete__title {
+    margin-top: 121px;
+    font-size: 30px;
+    color: brown;
+    font-weight: 800;
+    text-align: center;
+}
+.product-list-item{
+    color: #a10023;
+    font-size: 1.15rem;
+    list-style: none;
+}
+
+
+.paquete-image {
+    width: 300px;
+    height: 400px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.button__buy-container {
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buy_button {
+    padding: 10px 30px;
+    background-color: white;
+    color: #f5087e;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.buy_button:hover {
+    background-color: rgb(228, 55, 219);
+    color: white;
+    transition: .5s;
+}
+
+.products-container{
+    justify-content: center;
+   
+}
+
+@media (min-width:760px) {
+    .paquete-despliegue {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .paquete-container {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .paquete__title {
+        margin-top: 121px;
+        font-size: 30px;
+        color: brown;
+        font-weight: 800;
+    }
+
+    .paquete-image {
+        width: 250px;
+        height: 300px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    
+    .zoom {
+        transition: transform .2s;
+    }
+
+    .zoom:hover {
+        transform: scale(1.2);
+    }
+
+    .button__buy-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buy_button {
+        padding: 10px 30px;
+        background-color: white;
+        color: rgb(253, 37, 253);
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: bold;
+
+    }
+
+    .buy_button {
+        background-color: #f5087e;
+        color: white;
+        transition: .5s;
+    }
+
+}

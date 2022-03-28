@@ -58,7 +58,8 @@
 
 @media (min-width:760px) {
     .article-nosotros{
-        height: 81vh;
+        height: 82vh;
+        overflow: hidden;
         
     }
     .profile__info{

@@ -32,6 +32,11 @@
     height: 100%;
 }
 
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(1);
+}
+
 @media (min-width:760px) {
     .banner-title {
         font-size: 50px;

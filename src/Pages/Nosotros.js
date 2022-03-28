@@ -1,6 +1,11 @@
 import nosotros from '../assets/img/foto1.jpg'
+import Footer from '../Components/Footer';
 import '../Styles/Nosotros.css';
 const Nosotros = () => {
+  const credits = {
+    company: 'Dulces Detalles "ROMERITO"',
+    currentYear: new Date().getFullYear()
+  };
   return (
     <>
       <article className="article-nosotros section-page">
@@ -24,6 +29,7 @@ const Nosotros = () => {
           </div>
         </div>
       </article>
+        <Footer credits={credits} />
     </>
   );
 };
