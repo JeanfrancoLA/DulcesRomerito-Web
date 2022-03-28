@@ -25,9 +25,9 @@ const Galeria = () => {
 
   return (
     <>
-      <section className="galeria-page">
-        <div className="galeria-container">
-          <h2 className="galeria__title">Galeria</h2>
+      <section className="paquete-page">
+        <div className="paquete-container">
+          <h2 className="paquete__title">Galeria</h2>
           {gallery.length === 0 ? (
             <section className="spinner-container">
               <div className="lds-heart">
@@ -36,12 +36,12 @@ const Galeria = () => {
               <h3 className="spinner-load">L o a d i n g . . .</h3>
             </section>
           ) : (
-            <div className="galeria-despliegue" >
+            <div className="paquete-despliegue" >
               {gallery.map(({ id, name, img }) => {
                 return (
-                  <article className="galeria-list-container" key={id}>
-                    <figure className="galeria-image-container">
-                      <img src={img} alt={name} className="galeria-image zoom" />
+                  <article className="paquete-list-container" key={id}>
+                    <figure className="paquete-image-container">
+                      <img src={img} alt={name} className="paquete-image zoom" />
                     </figure>
                   </article>
                 );

@@ -25,9 +25,9 @@ const Paquetes = () => {
 
   return (
     <>
-      <section className="galeria-page">
-        <div className="galeria-container">
-          <h2 className="galeria__title">NUESTROS PAQUETES ROMERTO</h2>
+      <section className="paquete-page">
+        <div className="paquete-container">
+          <h2 className="paquete__title">NUESTROS PAQUETES ROMERITO</h2>
           {producto.length === 0 ? (
             <section className="spinner-container">
               <div className="lds-heart">
@@ -36,14 +36,27 @@ const Paquetes = () => {
               <h3 className="spinner-load">L o a d i n g . . .</h3>
             </section>
           ) : (
-            <div className="galeria-despliegue" >
-              {producto.map(({ id, name, img, title }) => {
+            <div className="paquete-despliegue" >
+              {producto.map(({ id, name, img, products,price }) => { 
                 return (
-                  <article className="galeria-list-container" key={id}>
-                    <figure className="galeria-image-container">
-                      <img src={img} alt={name} className="galeria-image zoom" />
+                  <article className="paquete-list-container" key={id}>
+                    <figure className="paquete-image-container">
+                      <img src={img} alt={name} className="paquete-image zoom" />
                     </figure>
-                    <button class="buy_button">Comprar {id}</button>
+                    <div className="product-list">
+                      <ul>
+                        <li>{products.it1}</li>
+                        <li>{products.it2}</li>
+                        <li>{products.it3}</li>
+                        <li>{products.it4}</li>
+                        <li>{products.it5}</li>
+                        <li>{products.it6}</li>
+                      </ul>
+                    </div>
+                    <p className="products-container">{price}</p>
+                    <div className="button__buy-container">
+                    < a href="https://api.whatsapp.com/send?phone=51970486444"><button className="buy_button">Comprar</button></a>
+                    </div>
                   </article>
                   
                 );
