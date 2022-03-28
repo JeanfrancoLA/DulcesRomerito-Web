@@ -9,11 +9,11 @@ const Galeria = () => {
     const apiRomerito = async () => {
       try {
         const response = await fetch(
-          "https://jeanfrancola.github.io/bd_Romerito/bdRomerito/galeria.json"
+          "https://jeanfrancola.github.io/bd_Romerito/bdRomerito/"
         );
         const data = await response.json();
-        setGallery(data);
-        // console.log(data);
+        setGallery(data.galeria);
+         //console.log(data.galeria);
       } catch (error) {
         console.log(error);
       } finally {

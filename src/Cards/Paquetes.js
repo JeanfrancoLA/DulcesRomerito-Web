@@ -1,19 +1,19 @@
-import "../Styles/Galeria.css";
+import "../Styles/Paquetes.css";
 import { useState, useEffect } from "react";
 
-const Galeria = () => {
-  const [gallery, setGallery] = useState([]);
-  // const recurso = `galeria`;
+const Paquetes = () => {
+  const [producto, setProduct] = useState([]);
+  // const recurso = `paquete`;
 
   useEffect(() => {
     const apiRomerito = async () => {
       try {
         const response = await fetch(
-          "https://jeanfrancola.github.io/bd_Romerito/bdRomerito/paquetes.json"
+          "https://jeanfrancola.github.io/bd_Romerito/bdRomerito/"
         );
         const data = await response.json();
-        setGallery(data);
-        // console.log(data);
+        setProduct(data.paquetes);
+         //console.log(data.paquetes);
       } catch (error) {
         console.log(error);
       } finally {
@@ -27,8 +27,8 @@ const Galeria = () => {
     <>
       <section className="galeria-page">
         <div className="galeria-container">
-          <h2 className="galeria__title">Galeria</h2>
-          {gallery.length === 0 ? (
+          <h2 className="galeria__title">NUESTROS PAQUETES ROMERTO</h2>
+          {producto.length === 0 ? (
             <section className="spinner-container">
               <div className="lds-heart">
                 <div></div>
@@ -37,13 +37,15 @@ const Galeria = () => {
             </section>
           ) : (
             <div className="galeria-despliegue" >
-              {gallery.map(({ id, name, img }) => {
+              {producto.map(({ id, name, img, title }) => {
                 return (
                   <article className="galeria-list-container" key={id}>
                     <figure className="galeria-image-container">
                       <img src={img} alt={name} className="galeria-image zoom" />
                     </figure>
+                    <button class="buy_button">Comprar {id}</button>
                   </article>
+                  
                 );
               })}
             </div>
@@ -54,4 +56,4 @@ const Galeria = () => {
   );
 };
 
-export default Galeria;
+export default Paquetes;

@@ -1,9 +1,13 @@
+import Paquetes from "../Cards/Paquetes";
+
 const NuestrosPaquetes = () => {
-    return ( 
+    return (
         <>
-            
+            <section>
+                <Paquetes /> 
+            </section>
         </>
-     );
+    );
 }
- 
+
 export default NuestrosPaquetes;

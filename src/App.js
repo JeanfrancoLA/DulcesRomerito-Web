@@ -10,6 +10,7 @@ import {
   Route
 } from 'react-router-dom';
 import Footer from "./Components/Footer";
+import NuestrosPaquetes from "./Pages/NuestrosPaquetes";
 
 const credits = {
   company: 'Dulces Detalles "ROMERITO"',
@@ -22,6 +23,7 @@ function App() {
       
     <Header/>
   <Routes>
+    <Route path="/nuestros-paquetes" element={<NuestrosPaquetes/>} />
     <Route path="/sobre-nosotros" element={<Nosotros/>} />
     <Route path="/inicio" element={<Inicio/>} />
     <Route path="/startpage" element={<StartPage/>} />
